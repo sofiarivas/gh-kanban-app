@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Repository Kanban
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Get a quick overview of the active branches on a GitHub repository. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
