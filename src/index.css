@@ -11,3 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#root {
+  max-width: 1440px;
+  margin: auto;
+  padding: 0 40px;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 100%;
+  /* Slight adjustment to letter spacing */
+  letter-spacing: -0.03em;;
+}

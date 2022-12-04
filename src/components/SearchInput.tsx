@@ -3,13 +3,13 @@ import * as React from 'react';
 interface SearchInputProps {
   placeholder: string;
   onClickHandler: (url: string) => void;
-  showError?: boolean;
+  displayError?: boolean;
 }
 
 const SearchInput: React.FunctionComponent<SearchInputProps> = ({
   placeholder,
   onClickHandler,
-  showError = true,
+  displayError = false,
 }) => {
   const [inputValue, setInputValue]= React.useState('')
   // CLEAR THIS UP
@@ -20,7 +20,7 @@ const SearchInput: React.FunctionComponent<SearchInputProps> = ({
     <div>
       <input placeholder={placeholder} value={inputValue} onChange={handleChange}></input>
       <button onClick={() => onClickHandler(inputValue)}> Submit</button>
-      {showError && <p>Ops! Something went wrong. Try again.</p>}
+      {displayError && <p>Ops! Something went wrong. Try again.</p>}
     </div>
   );
 };

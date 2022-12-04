@@ -1,14 +1,10 @@
-.App {
-  max-width: 1440px;
-  margin: auto;
-}
-.App-logo {
+.HomePage__logo {
   height: 25px;
   pointer-events: none;
   margin-right: 220px;
 }
 
-.App-main {
+.HomePage__main {
   min-height: 100vh;
   display: flex;
   flex-wrap: wrap;
@@ -17,6 +13,61 @@
   padding: 0 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.Board {
+  text-align: center;
+}
+
+.Board__header {
+  margin: 100px auto;
+  max-width: 367px;
+}
+
+.Board__container {
+  display: flex;
+}
+
+.Board__column {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  margin: 0 20px;
+  overflow: hidden;
+}
+
+.Board__column > .Card {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.Board__subtitle {
+  /* Colors/Light/Shade 02 */
+  color: #515151;
+  font-size: 12px;
+  width: 100%;
+  text-align: left;
+}
+
+/* Components */
+
+/* Card */
+.Card {
+  border-radius: 4px;
+  /* Colors/Light/Shade 04 */
+  background: #EEEEEE;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 24px;
+  width: 100%;
+  max-width: 367px;
+}
+
+.Card__title {
+  /* Colors/Light/Shade 02 */
+  color: #515151;
+}
+
+.Card:hover {
+  /* Colors/Light/Shade 03 */
+  background: #D1D1D1;
 }
