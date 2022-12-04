@@ -1,18 +1,18 @@
-import App from './App';
-import RepositoryBoard from './RepositoryBoard';
-import {
-    createBrowserRouter,
-} from 'react-router-dom';
+import BoardPage from './BoardPage';
+import ErrorPage from './ErrorPage';
+import HomePage from './HomePage';
+import { createBrowserRouter } from 'react-router-dom';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <App />
+    element: <HomePage />,
+    errorElement: <ErrorPage />,
   },
   {
     path: 'board',
-    element: <RepositoryBoard />
-  }
+    element: <BoardPage />
+  },
 ]);
 
 export default router;
