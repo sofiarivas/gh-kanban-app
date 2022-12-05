@@ -32,12 +32,10 @@
   flex-direction: column;
   width: 33%;
   margin: 0 20px;
-  overflow: hidden;
 }
 
 .Board__column > .Card {
   margin-bottom: 20px;
-  width: 100%;
 }
 
 .Board__subtitle {
@@ -48,26 +46,75 @@
   text-align: left;
 }
 
+@media (max-width: 600px) {
+  .Board__container {
+    flex-direction: column;
+  }
+
+  .Board__column {
+    width: 100%;
+  }
+}
+
+
 /* Components */
 
 /* Card */
 .Card {
+  align-items: center;
   border-radius: 4px;
   /* Colors/Light/Shade 04 */
   background: #EEEEEE;
   display: flex;
-  justify-content: space-evenly;
-  padding: 24px;
+  justify-content: space-between;
+  height: 70px;
   width: 100%;
-  max-width: 367px;
 }
 
 .Card__title {
   /* Colors/Light/Shade 02 */
   color: #515151;
+  padding: 0 20px
+}
+
+.Card__icon {
+  font-weight: 600;
+  width: 40px;
 }
 
 .Card:hover {
   /* Colors/Light/Shade 03 */
   background: #D1D1D1;
+}
+
+/* SearchInput */
+.SearchBar__container {
+  display: flex;
+}
+
+.SearchBar__input {
+  border: none;
+  /* Colors/Light/Shade 01 */
+  border-bottom: 1px solid #151515;
+  font-size: 16px;
+  width: 100%;
+}
+
+.SearchBar__input:focus {
+  outline: none;
+  /* Colors/Light/Shade 04 */
+  background: #EEEEEE;
+}
+
+.SearchBar__button {
+  /* Colors/Light/Shade 04 */
+  background: #EEEEEE;
+  border-radius: 4px;
+  padding: 8px 16px;
+  margin-left: 10px;
+}
+
+.SearchBar__error {
+  /* Colors/Light/Red */
+  color: #D62617;
 }

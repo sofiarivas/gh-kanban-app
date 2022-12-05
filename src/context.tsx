@@ -5,7 +5,7 @@ interface AppContextInterface {
   repository: Repository;
   setRepository: (repository: Repository) => void;
   branches: Array<Branch>;
-  setBranches: (branches: []) => void;
+  setBranches: (branches: any) => void;
 }
 
 export const defaultContext = {

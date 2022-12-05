@@ -25,3 +25,9 @@ h1 {
   /* Slight adjustment to letter spacing */
   letter-spacing: -0.03em;;
 }
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}

@@ -1,6 +1,6 @@
-import BoardPage from './BoardPage';
-import ErrorPage from './ErrorPage';
-import HomePage from './HomePage';
+import BoardPage from './pages/BoardPage';
+import ErrorPage from './pages/ErrorPage';
+import HomePage from './pages/HomePage';
 import { createBrowserRouter } from 'react-router-dom';
 
 const router = createBrowserRouter([
